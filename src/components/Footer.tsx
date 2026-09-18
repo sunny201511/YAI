@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import { brand } from '../config/products';
 import { asset } from '../lib/assets';
 import { GithubIcon } from './icons/Github';
 
 export function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className="border-t border-border bg-white mt-auto">
       <div className="container py-12 flex-col gap-8 sm:flex-row sm:justify-between sm:items-start">
@@ -20,9 +22,9 @@ export function Footer() {
         {/* Products */}
         <div className="flex-col gap-2 min-w-150">
           <h4 className="font-semibold text-primary mb-3 text-sm">产品</h4>
-          <a href="/products/customer-service" className="block py-1 text-sm text-secondary hover:text-primary transition-colors">AI 客服</a>
-          <a href="/products/notebook" className="block py-1 text-sm text-secondary hover:text-primary transition-colors">AI 笔记</a>
-          <a href="/#products" className="block py-1 text-sm text-secondary hover:text-primary transition-colors">产品矩阵</a>
+          <Link to="/products/customer-service" className="block py-1 text-sm text-secondary hover:text-primary transition-colors">AI 客服</Link>
+          <Link to="/products/notebook" className="block py-1 text-sm text-secondary hover:text-primary transition-colors">AI 笔记</Link>
+          <Link to="/#products" className="block py-1 text-sm text-secondary hover:text-primary transition-colors">产品矩阵</Link>
         </div>
 
         {/* Resources */}
@@ -36,9 +38,20 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-sm text-muted sm:mt-0">
-          <p>© {new Date().getFullYear()} {brand.name}.</p>
+          <p>© {year} {brand.name}。</p>
           <p>All rights reserved.</p>
         </div>
+      </div>
+
+      {/* Disclaimer */}
+      <div className="border-t border-border pt-6 mt-8">
+        <p className="text-xs text-muted text-center leading-relaxed max-w-3xl mx-auto">
+          © 2026 {brand.name}｜本网站为开源项目文档与展示站点，托管于 GitHub Pages。
+          本站主要用于介绍开源工具、展示功能与技术文档；页面含外部链接，指向独立运营的商业增值服务，本站本身不提供在线交易、SaaS 托管服务。
+          开源代码遵循 MIT 协议。
+          GitHub® 是 GitHub, Inc. 的商标，本项目与 GitHub 公司无任何隶属关系。
+          使用本工具产生的风险由使用者自行承担。
+        </p>
       </div>
     </footer>
   );

@@ -161,5 +161,5 @@ export const brand = {
   tagline: 'AI，不只是聊天。',
   description: '我们正在构建一系列真正进入工作流的 AI 产品。',
   github: 'https://github.com/sunny201511/YAI',
-  document: 'https://docs.yai.ai',
+  document: 'https://github.com/sunny201511/YAI/blob/main/README.md',
 };
