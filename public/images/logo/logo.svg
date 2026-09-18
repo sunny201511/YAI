@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- 优化后的高对比度双色线性渐变，无模糊层 -->
+    <linearGradient id="notebookLogoSharp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+
+  <g fill="url(#notebookLogoSharp)">
+    <!-- 顶部横向月牙弧线 -->
+    <path d="M 68 52 C 92 78, 108 78, 132 52 C 112 66, 88 66, 68 52 Z" />
+    
+    <!-- 左下竖向月牙弧线 -->
+    <path d="M 52 68 C 78 92, 92 108, 92 138 C 80 112, 66 88, 52 68 Z" />
+    
+    <!-- 右下竖向月牙弧线 -->
+    <path d="M 148 68 C 122 92, 108 108, 108 138 C 120 112, 134 88, 148 68 Z" />
+
+    <!-- 节点圆球（无发光边缘，纯矢量边缘） -->
+    <circle cx="55" cy="55" r="22" />
+    <circle cx="145" cy="55" r="22" />
+    <circle cx="100" cy="148" r="22" />
+  </g>
+</svg>

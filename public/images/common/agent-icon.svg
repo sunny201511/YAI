@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none">
+  <defs>
+    <linearGradient id="agentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#3b82f6"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#2dd36f"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 2l1.9 5.9h5.9l-4.7 3.6 1.8 5.7-4.9-3.3-4.9 3.3 1.8-5.7-4.7-3.6h5.9z" fill="url(#agentGrad)"/>
+</svg>
