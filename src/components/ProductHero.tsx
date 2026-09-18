@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { ProductConfig } from '../types/product';
+import { asset } from '../lib/assets';
 import { ProductImage } from './ProductImage';
 import { StatusBadge } from './StatusBadge';
 
@@ -15,7 +16,7 @@ export function ProductHero({ product }: ProductHeroProps) {
           <div className="hero-text">
             <span className="eyebrow">AI 产品</span>
             <div className="flex-center gap-3 mb-4">
-              <img src={product.icon} alt={product.shortName} width={48} height={48} />
+              <img src={asset(product.icon)} alt={product.shortName} width={48} height={48} />
               <span className="text-3xl font-bold text-primary">{product.name}</span>
               <StatusBadge status={product.status} />
             </div>

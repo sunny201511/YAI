@@ -15,7 +15,7 @@
   <circle cx="178" cy="118" r="6" fill="#22c55e"/>
   <rect x="200" y="102" width="740" height="32" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
   <circle cx="216" cy="118" r="3" fill="#94a3b8"/>
-  <text x="236" y="122" fill="#94a3b8" font-family="ui-monospace" font-size="13">app.notoAI.com</text>
+  <text x="236" y="122" fill="#94a3b8" font-family="ui-monospace" font-size="13">app.YAI.com</text>
 
   <!-- Tab bar -->
   <rect x="200" y="144" width="740" height="40" rx="0 0 0 0" fill="#ffffff" stroke="#e5e7eb"/>
@@ -35,7 +35,7 @@
   <!-- AI reply bubble -->
   <rect x="210" y="290" width="340" height="76" rx="16" fill="#eff6ff" stroke="#bfdbfe"/>
   <rect x="216" y="300" width="20" height="20" rx="10" fill="#bfdbfe"/>
-  <text x="240" y="316" fill="#1e293b" font-family="system-ui" font-size="12" font-weight="500">NotoAI AI 客服</text>
+  <text x="240" y="316" fill="#1e293b" font-family="system-ui" font-size="12" font-weight="500">YAI AI 客服</text>
   <text x="240" y="334" fill="#475569" font-family="system-ui" font-size="12">您的订单正在打包中，预计 2 天内发出…</text>
   <text x="520" y="360" fill="#94a3b8" font-family="system-ui" font-size="11" text-anchor="end">发送</text>
   <!-- input -->

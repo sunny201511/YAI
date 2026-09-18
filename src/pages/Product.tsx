@@ -1,5 +1,6 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getProductBySlug } from '../config/products';
+import { asset } from '../lib/assets';
 import { ProductHero } from '../components/ProductHero';
 import { Features } from '../components/Features';
 import { WorkflowSteps } from '../components/WorkflowSteps';
@@ -27,7 +28,7 @@ export function Product() {
       <section className="section">
         <div className="container max-w-4xl mx-auto flex-center flex-col gap-4 mb-6">
           <div className="flex-center gap-3">
-            <img src={product.icon} alt={product.shortName} width={48} height={48} />
+            <img src={asset(product.icon)} alt={product.shortName} width={48} height={48} />
             <h1 className="text-3xl font-bold text-slate-100">{product.name}</h1>
             <StatusBadge status={product.status} />
           </div>

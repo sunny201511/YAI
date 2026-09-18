@@ -16,7 +16,7 @@ export const products = {
       primaryLabel: '立即体验',
       primaryHref: '#',
       secondaryLabel: 'GitHub',
-      secondaryHref: 'https://github.com',
+      secondaryHref: 'https://github.com/sunny201511/YAI',
       image: '/images/customer-service/screenshot.png',
     },
     screenshots: [
@@ -93,7 +93,7 @@ export const products = {
       primaryLabel: '立即体验',
       primaryHref: '#',
       secondaryLabel: 'GitHub',
-      secondaryHref: 'https://github.com',
+      secondaryHref: 'https://github.com/sunny201511/YAI',
       image: '/images/notebook/screenshot.png',
     },
     screenshots: [
