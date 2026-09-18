@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { ProductConfig } from '../types/product';
+import { asset } from '../lib/assets';
 import { StatusBadge } from './StatusBadge';
 
 type ProductCardProps = {
@@ -13,7 +14,7 @@ export function ProductCard({ product }: ProductCardProps) {
         {/* Header: icon + name + status */}
         <div className="flex-between p-6 pb-3">
           <div className="flex-center gap-3">
-            <img src={product.icon} alt={product.shortName} width={40} height={40} />
+            <img src={asset(product.icon)} alt={product.shortName} width={40} height={40} />
             <h3 className="text-xl font-bold text-primary">
               {product.shortName}
             </h3>
@@ -24,7 +25,7 @@ export function ProductCard({ product }: ProductCardProps) {
         {/* Preview */}
         <div className="px-6 pb-4">
           <div className="img-wrapper">
-            <img src={product.cover} alt={product.shortName} />
+            <img src={asset(product.cover)} alt={product.shortName} />
           </div>
         </div>
 

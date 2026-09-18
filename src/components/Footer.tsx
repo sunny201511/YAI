@@ -1,4 +1,5 @@
 import { brand } from '../config/products';
+import { asset } from '../lib/assets';
 import { GithubIcon } from './icons/Github';
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
         {/* Brand */}
         <div className="flex-col gap-4 min-w-200">
           <div className="flex-center gap-2">
-            <img src="/images/logo/logo.svg" alt={brand.name} width={32} height={32} />
+            <img src={asset('/images/logo/logo.svg')} alt={brand.name} width={32} height={32} />
             <span className="font-bold text-xl text-primary">{brand.name}</span>
           </div>
           <p className="text-sm text-tertiary">

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { brand } from '../config/products';
+import { asset } from '../lib/assets';
 import { GithubIcon } from './icons/Github';
 import { MenuIcon } from './icons/Menu';
 import { CloseIcon } from './icons/Close';
@@ -20,7 +21,7 @@ export function Header() {
       <div className="container h-16 flex-between">
         {/* Left: Logo */}
         <a href="/" className="flex-center gap-2 text-primary font-semibold">
-          <img src="/images/logo/logo.svg" alt={brand.name} width={36} height={36} />
+          <img src={asset('/images/logo/logo.svg')} alt={brand.name} width={36} height={36} />
           <span className="text-xl">{brand.name}</span>
         </a>
 

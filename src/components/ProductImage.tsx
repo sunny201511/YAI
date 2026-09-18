@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { asset } from '../lib/assets';
 
 export type ProductImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   src: string;
@@ -26,6 +27,7 @@ export function ProductImage({
   className = '',
   ...rest
 }: ProductImageProps) {
+  const resolvedSrc = asset(src);
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
@@ -54,7 +56,7 @@ export function ProductImage({
 
   return (
     <img
-      src={src}
+      src={resolvedSrc}
       alt={alt}
       loading={rest.loading ?? 'lazy'}
       onLoad={() => setLoaded(true)}

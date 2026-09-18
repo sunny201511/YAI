@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { products } from '../config/products';
+import { asset } from '../lib/assets';
 
 const capabilities = [
   {
@@ -54,7 +55,7 @@ export function CapabilityShowcase() {
               className={`cap-card ${cap.status === 'coming-soon' ? 'cap-coming' : ''}`}
             >
               <div className="flex-center gap-3 mb-4">
-                <img src={cap.icon} alt={cap.name} width={36} height={36} />
+                <img src={asset(cap.icon)} alt={cap.name} width={36} height={36} />
                 <h3 className="text-xl font-bold text-primary">{cap.name}</h3>
               </div>
               <p className="text-sm text-secondary mb-4 leading-relaxed line-clamp-2">

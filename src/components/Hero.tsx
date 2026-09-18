@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { asset } from '../lib/assets';
 
 type HeroProps = {
   eyebrow: string;
@@ -58,7 +59,7 @@ export function Hero({
           </div>
           <div className="hero-preview">
             <div className="img-wrapper shadow-elevated">
-              <img src={imageSrc} alt={imageAlt} />
+              <img src={asset(imageSrc)} alt={imageAlt} />
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export function Home() {
         secondaryLabel="GitHub"
         secondaryHref={brand.github}
         imageSrc="/images/hero/hero-window.svg"
-        imageAlt="Noto AI 工作台预览"
+        imageAlt="YAI 工作台预览"
       />
 
       {/* Capability showcase */}
