@@ -292,6 +292,17 @@ a:focus-visible {
 @media (min-width: 768px) {
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
 }
+/* ===== 截图网格 ===== */
+.screenshot-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .screenshot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 /* ===== 宽高比 ===== */
 .aspect-video { aspect-ratio: 16 / 9; }

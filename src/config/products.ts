@@ -23,6 +23,7 @@ export const products = {
       '/images/customer-service/screenshot.png',
       '/images/customer-service/screenshot-chat.png',
       '/images/customer-service/screenshot-workbench.png',
+      '/images/customer-service/customerOnline.png',
     ],
     features: [
       {
@@ -100,6 +101,7 @@ export const products = {
       '/images/notebook/screenshot.png',
       '/images/notebook/screenshot-editor.png',
       '/images/notebook/screenshot-ai.png',
+      '/images/notebook/notebookAgentIng.png',
     ],
     features: [
       {

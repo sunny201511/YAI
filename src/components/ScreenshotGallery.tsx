@@ -6,9 +6,6 @@ type ScreenshotGalleryProps = {
 };
 
 export function ScreenshotGallery({ product }: ScreenshotGalleryProps) {
-  const primary = product.screenshots[0];
-  const rest = product.screenshots.slice(1);
-
   return (
     <section className="section">
       <div className="container">
@@ -19,27 +16,17 @@ export function ScreenshotGallery({ product }: ScreenshotGalleryProps) {
           未来替换为真实产品截图，布局将自动适配。
         </p>
 
-        <div className="grid-2 gap-6">
-          <div className="img-wrapper">
-            <ProductImage
-              src={primary}
-              alt={`${product.name} 主界面`}
-              aspectRatio="16/9"
-              cover
-            />
-          </div>
-          <div className="flex-col gap-3">
-            {rest.map((src, idx) => (
-              <div key={src} className="img-wrapper">
-                <ProductImage
-                  src={src}
-                  alt={`${product.name} 截图 ${idx + 2}`}
-                  aspectRatio="16/9"
-                  cover
-                />
-              </div>
-            ))}
-          </div>
+        <div className="screenshot-grid">
+          {product.screenshots.map((src, idx) => (
+            <div key={src} className="img-wrapper">
+              <ProductImage
+                src={src}
+                alt={`${product.name} 截图 ${idx + 1}`}
+                aspectRatio="16/9"
+                cover
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
